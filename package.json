@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "workspaces": [
+        "gatsby-theme-ejiwen",
+        "blog"
+    ],
+    "dependencies": {
+        "gatsby-plugin-sharp": "^2.6.25",
+        "gatsby-transformer-sharp": "^2.5.12"
+    }
+}
