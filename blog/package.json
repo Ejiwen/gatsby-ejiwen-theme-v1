@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "blog",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.30",
+    "gatsby-source-contentful": "^2.3.35",
+    "gatsby-theme-ejiwen": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

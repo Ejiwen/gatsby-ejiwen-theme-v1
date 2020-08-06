@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react"
+import { Heading, Container } from "theme-ui"
 
-const Layout = ({children}) => (
-    <>
-    <h1> Ejiwen blog </h1>
-    <div> {children} </div>
-    </>
-)
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Heading>Gatsby Events Theme</Heading>
+      <Container>{children}</Container>
+    </div>
+  )
+}
 
-export default Layout;
+export default Layout
