@@ -1,6 +1,11 @@
 export const theme = {
+  useBodyStyles: true,
+  breakpoints: [
+    '40em', '56em', '64em',
+  ],
+  space: [0, 4, 8, 16, 32],
     colors: {
-      text: "#333",
+      text: "white",
       background: "red",
       primary: "#639",
       secondary: "#ff6347",
@@ -9,6 +14,7 @@ export const theme = {
       body: "system-ui, sans-serif",
       heading: "system-ui, sans-serif",
       monospace: "Menlo, monospace",
+      testing: "sans-serif, sans-serif",
     },
     fontWeights: {
       body: 400,
@@ -20,14 +26,35 @@ export const theme = {
       heading: 1.125,
     },
     fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-    space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
+    text: {
+      heading: {
+        backgroundColor: "primary",
+        color: "background",
+        fontWeight: "bold",
+        margin: "0 auto",
+        maxWidth: "max",
+        padding: 3,
+        width: "default",
+        a: {
+          color: "inherit",
+        },
+      },
+      testing : {
+        backgroundColor: "purple",
+        color: "text",
+        fontFamily: "testing",
+        p: 4,
+        width: ['100%', '50%', '25%'],
+      }
+    },
   
   styles : {
           root : {
               fontWeight: 'body'
           },
           h1 : {
-              color: "red"
+              color: "yellow"
           }
       }
   }

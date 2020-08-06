@@ -8,16 +8,6 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop"
   },
-  "peerDependencies": {
-    "gatsby": "^2.24.29",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "gatsby": "^2.24.29",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "gatsby-plugin-sharp": "^2.6.25",
@@ -26,5 +16,15 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-sharp": "^2.5.12",
     "theme-ui": "^0.3.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.24.33",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "gatsby": "^2.24.33",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
