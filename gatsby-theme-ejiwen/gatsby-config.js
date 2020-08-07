@@ -3,11 +3,18 @@ require("dotenv").config({
 })
 module.exports = ({ contentPath = "data", basePath = "/" }) => ({
   plugins: [
-    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,"gatsby-plugin-theme-ui",`gatsby-plugin-typography`,
+    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,"gatsby-plugin-theme-ui",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: contentPath,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/typography`,
       },
     },
     
