@@ -10,6 +10,13 @@ module.exports = ({ contentPath = "data", basePath = "/" }) => ({
         path: contentPath,
       },
     },
+
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/typography`,
+      },
+    },
     
     {
       resolve: `gatsby-source-contentful`,
