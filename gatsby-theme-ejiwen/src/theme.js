@@ -1,11 +1,15 @@
+import  tailwind   from '@theme-ui/tailwind'
+
 export const theme = {
+  ...tailwind,
   useBodyStyles: true,
   breakpoints: [
     '40em', '56em', '64em',
   ],
   space: [0, 4, 8, 16, 32],
     colors: {
-      text: "white",
+      ...tailwind.colors,
+      text: "...tailwind.colors.indigo[5]",
       background: "red",
       primary: "#639",
       secondary: "#ff6347",
@@ -30,7 +34,7 @@ export const theme = {
     text: {
       heading: {
         backgroundColor: "primary",
-        color: "background",
+        color: "text",
         fontWeight: "bold",
         margin: "0 auto",
         maxWidth: "max",
@@ -42,7 +46,7 @@ export const theme = {
       },
       testing : {
         backgroundColor: "purple",
-        color: "text",
+        color: "",
         fontFamily: "testing",
         p: 4,
         width: ['100%', '50%', '25%'],
@@ -54,7 +58,7 @@ export const theme = {
               fontWeight: 'body'
           },
           h1 : {
-              color: "yellow"
+              color: "yellow[5]"
           }
       }
   }
