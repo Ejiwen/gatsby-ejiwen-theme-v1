@@ -1,14 +1,30 @@
+import colors from './colors';
+
 export const theme = {
   useBodyStyles: true,
   breakpoints: [
     '40em', '56em', '64em',
   ],
   space: [0, 4, 8, 16, 32],
+  initialColorModeName : 'light',
     colors: {
-      text: "white",
-      background: "red",
+      ...colors,
+      text: "#1A202C",
+      background: ["#ddd","#f8f9fc"],
       primary: "#639",
       secondary: "#ff6347",
+      modes: {
+        dark: {
+          text: '#7bc74d',
+          background: ['#393e46','#222831'],
+          primary: '#eeeeee',
+        },
+        rimi: {
+          text: "#f6c667",
+          background: ["#C53030","#22543D"],
+          primary: "#ffaf00"
+        },
+      }
     },
     fonts: {
       body: "system-ui, sans-serif",
@@ -29,34 +45,26 @@ export const theme = {
 
     text: {
       heading: {
-        backgroundColor: "primary",
-        color: "background",
+        //backgroundColor: "background",
+        color: "text",
         fontWeight: "bold",
         margin: "0 auto",
         maxWidth: "max",
-        padding: 3,
         width: "default",
         a: {
           color: "inherit",
         },
       },
-      testing : {
-        backgroundColor: "purple",
-        color: "text",
-        fontFamily: "testing",
-        p: 4,
-        width: ['100%', '50%', '25%'],
-      }
     },
-  
-  styles : {
-          root : {
-              fontWeight: 'body'
-          },
-          h1 : {
-              color: "yellow"
-          }
+
+    layout: {
+      container: {
+        color: 'text',
+        margin: 0,
       }
+        
+    },
+   
   }
 
   export default theme
