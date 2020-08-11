@@ -1,14 +1,11 @@
-import colors from './colors';
-
 export const theme = {
-  useBodyStyles: false,
+  useBodyStyles: true,
   breakpoints: [
     '40em', '56em', '64em',
   ],
   space: [0, 4, 8, 16, 32],
   initialColorModeName : 'light',
     colors: {
-      ...colors,
       text: "#1A202C",
       background: ["#ddd","#f8f9fc"],
       primary: "#639",

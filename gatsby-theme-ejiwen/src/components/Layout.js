@@ -1,9 +1,9 @@
 /** @jsx jsx */
 //import React from "react"
-import { Heading, Container , jsx, Box, Grid } from "theme-ui"
+import { Container , jsx, Box, Grid } from "theme-ui"
 import { useColorMode, useThemeUI} from 'theme-ui'
-import Hello from '../pages/Hello'
 import "../styles/style.css"
+import LeftSide from "../pages/src/LeftSide"
 
 const Layout = ({ children }) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
   return (
     <Grid gap={0} columns={['20% 80%']}>
       
-      <Box p={2} bg='background.0'>
-        <Hello className="sideBar" /> 
+      <Box className="sideBar" p={2} bg='background.0' >
+        <LeftSide />
       </Box>
 
       <Box p={2} bg='background.1' sx={{ flex: '1 1 auto', height: "100%", minHeight:"100vh"}}>
