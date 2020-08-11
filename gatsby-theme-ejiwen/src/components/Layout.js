@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     <Grid gap={0} columns={['20% 80%']}>
       
       <Box className="sideBar" p={2} bg='background.0' >
-        <LeftSide />
+        <LeftSide/>
       </Box>
 
       <Box p={2} bg='background.1' sx={{ flex: '1 1 auto', height: "100%", minHeight:"100vh"}}>
