@@ -22,7 +22,8 @@ export const theme = {
         rimi: {
           text: "#f6c667",
           background: ["#C53030","#22543D"],
-          primary: "#ffaf00"
+          primary: "#ffaf00",
+          secondary: "Yellow",
         },
       }
     },
@@ -62,8 +63,21 @@ export const theme = {
         color: 'text',
         margin: 0,
       }
-        
     },
+
+    styles: {
+      p: {
+        color: 'white'
+      },
+      h2: {
+        fontSize: 32,
+        fontFamily: 'heading',
+        fontWeight: 'heading',
+        color: 'secondary',
+        mt: 4,
+        mb: 2,
+      },
+    }
    
   }
 
