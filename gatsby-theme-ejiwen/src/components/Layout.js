@@ -1,7 +1,8 @@
 /** @jsx jsx */
 //import React from "react"
-import { Heading, Container , jsx, Box } from "theme-ui"
+import { Heading, Container , jsx, Box, Grid } from "theme-ui"
 import { useColorMode, useThemeUI, Flex } from 'theme-ui'
+import "../styles/style.css"
 
 const Layout = ({ children }) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -16,20 +17,20 @@ const Layout = ({ children }) => {
   const newColorMode = allModes[nextIndex]
 
   return (
-    <Flex>
-      <Box  p={2} bg='background.0' sx={{ height: "100vh", borderRight:"1px green solid" }}>
-        <Heading>Gatsby Events Theme</Heading>
+    <Grid gap={0} columns={['20% 80%']}>
+    
+      <Box p={2} bg='background.0'>
+       <Heading className='sideBar'>Gatsby Events Theme</Heading> 
       </Box>
-      
-      <Box p={2} bg='background.1' sx={{ flex: '1 1 auto', height: "100vh"}}>
+
+      <Box p={2} bg='background.1' sx={{ flex: '1 1 auto', height: "100%", minHeight:"100vh"}}>
         <button onClick={ (e) => setColorMode(newColorMode) }>
         Change theme {newColorMode}
         </button>
         <Container>{children}</Container>
       </Box>
-      
-      
-    </Flex>
+    
+    </Grid>
   )
 }
 

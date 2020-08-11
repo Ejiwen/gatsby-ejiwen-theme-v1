@@ -1,7 +1,7 @@
 import colors from './colors';
 
 export const theme = {
-  useBodyStyles: true,
+  useBodyStyles: false,
   breakpoints: [
     '40em', '56em', '64em',
   ],
@@ -15,7 +15,7 @@ export const theme = {
       secondary: "#ff6347",
       modes: {
         dark: {
-          text: '#7bc74d',
+          text: '#f8f9fc',
           background: ['#393e46','#222831'],
           primary: '#eeeeee',
         },
